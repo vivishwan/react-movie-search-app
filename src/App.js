@@ -46,6 +46,7 @@ const App = () => {
   //call the url
   useEffect(() => {
     getMovieRequest(searchValue);
+    document.title = 'vivishwan-movie-search';
   }, [searchValue]); //dependency array
   //we will pass the searchValue in the useEffect hook so that it will run the API call again if value changes
 
